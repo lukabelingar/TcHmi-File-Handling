@@ -1,0 +1,69 @@
+{
+  "function": {
+    "name": "UploadFromClientToHmi",
+    "namespace": "TcHmi.Functions.file_handling",
+    "displayName": "UploadFromClientToHmi",
+    "description": "",
+    "waitMode": "Asynchronous",
+    "category": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "Name",
+        "displayName": "Name",
+        "type": "tchmi:project#/definitions/Symbol_Of_String",
+        "description": "file name",
+        "defaultValue": "",
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "Accept",
+        "displayName": "Accept",
+        "type": "tchmi:general#/definitions/String",
+        "description": "accepted file type(s)",
+        "defaultValue": "",
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "UploadFromClientToHmi.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}
