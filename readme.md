@@ -6,19 +6,26 @@ File contents are displayed (and can be modified) in the `TcHmiTextarea` element
 Each function accepts base directory, file and extension as separate arguments.
 The big window in the middle is holding file's contents.
 
-## Upload
+# Functionality
+### Upload
 File upload action is done by standard TS trickery and stores text into the big window.
 If extension is provided, it filter files based on it.
 If filename element is provided, uploaded file name will be stored there.
 
-## Download
+### Download
 Downloads contents as file using standard TS trickery.
 
-## Load
+### Load
 Loads file from server using standard jQuery trickery and displays contents.
 
-## Save
+### Save
 Saves contents as file to the server side using TcHmi's `FileUploader` class and ws API.
 
-## Delete
+### Delete
 Deletes the file from the server by the given filename using TcHmi ws API.
+
+## Running the project
+Project expects a C:\shared folder to be accessed.
+
+## Tested
+Tested on 1.12.760.59
