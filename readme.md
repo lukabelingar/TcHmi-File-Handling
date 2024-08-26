@@ -6,7 +6,7 @@ File contents are displayed (and can be modified) in the `TcHmiTextarea` element
 Each function accepts base directory, file and extension as separate arguments.
 The big window in the middle is holding file's contents.
 
-# Functionality
+## Functionality
 ### Upload
 File upload action is done by standard TS trickery and stores text into the big window.
 If extension is provided, it filter files based on it.
